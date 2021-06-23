@@ -1,0 +1,66 @@
+<style>
+.terminal {width:700px;height:500px;border: 2px solid grey;border-radius:5px;background-color:#34eb71;}
+.ribbon {width:700px;height:30px;border: 1px solid grey;border-radius:3px;background-color:grey;
+padding-top:5px;padding-bottom:5px;}
+.circle {float:left;width:20px;}
+.terminal-title {color:white;padding-left:65px;}
+.terminal-content { width:700px;color:white;padding-left:3px;padding-top:0px;float:left;margin-top:-110px;}
+.design {background-color: indianred;}
+</style>
+<body class="design">
+<center>
+<h1 style="font-size: 50px; font-family: cursive; color: mintcream;">Integration OF JAvaScript With Docker  </h1>
+<img src="https://nystudio107-ems2qegf7x6qiqq.netdna-ssl.com/img/blog/_1200x630_crop_center-center_82_none/run-your-node-js-apps-buildchains-via-docker.jpg?mtime=1599964647"  style="height: 150;width: fit-content;">
+<div class='terminal'>
+<div class='ribbon'>
+<div class='circle' ><svg><circle cx="10" cy="10" r="5" fill="pink" /></svg></div>
+<div class='circle' ><svg><circle cx="10" cy="10" r="5" fill="cyan" /></svg></div>
+<div class='circle' ><svg><circle cx="10" cy="10" r="5" fill="blue" /></svg></div>
+<div class='terminal-title' >[Akash@Linux:~]#</div>
+</div>
+
+<script>
+   // Main Function
+  function test(enter) {
+
+    //Check if the enter key is pressed
+    if (enter.keyCode == 13) {
+
+     
+      document.getElementById('pu').innerHTML = "";
+      var i = document.getElementById("text").value
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "http://192.168.56.104/cgi-bin/test.py?x=" + i, false)
+      xhr.send();
+      var output = xhr.responseText;
+      document.getElementById("pu").innerHTML = output;
+
+      //Clear the  input from the text box
+      document.getElementById('text').value = "";
+    }
+  }
+
+</script>
+<div id="container">
+
+  <div id="bar">
+    <div id="red">
+    </div>
+    <div id="yellow">
+    </div>
+    <div id="green">
+    </div>
+  </div>
+  <div id="screen">
+    <div id="userInput">
+      <input type="text" value="[Akash@Linux:~]#" id="prompt" size="28" readonly="readonly">
+      <input type="text" id="text" onkeypress="test(event)" placeholder="Enter your command" size="35"
+        autofocus>
+    </div>
+    <pre>
+    <div id="pu" style="color: red;font-size: 15px;width:700px;height:500">Output Will Be HERE ............</div>
+    </pre>
+  </div>
+</div>
+</center>
+</body>
