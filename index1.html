@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Linux Machine</title>
+    </head>
+        <body class="design">
+            <link rel="stylesheet" href="style.css">
+            <script type="text/javascript" src="test.js"></script>
+            <center>
+            <h1>Linux Terminal</h1>
+            <div class='terminal'>
+            <div class='ribbon'>
+            <div class='circle' ><svg><circle cx="10" cy="10" r="5" fill="pink" /></svg></div>
+            <div class='circle' ><svg><circle cx="10" cy="10" r="5" fill="cyan" /></svg></div>
+            <div class='circle' ><svg><circle cx="10" cy="10" r="5" fill="blue" /></svg></div>
+            <div class='terminal-title' >[Akash@Linux:~]#</div>
+            </div>
+            <!---Script Here-->
+            
+            <div id="container">
+            
+              <div id="bar">
+                <div id="red">
+                </div>
+                <div id="yellow">
+                </div>
+                <div id="green">
+                </div>
+              </div>
+              <div id="screen">
+                <div id="userInput">
+                  <input type="text" value="[Akash@Linux:~]#" id="prompt" size="28" readonly="readonly">
+                  <input type="text" id="text" onkeypress="test(event)" placeholder="Enter your command" size="35"
+                    autofocus>
+                </div>
+                <pre>
+                <div id="pu">Output Will Be HERE ............</div>
+                </pre>
+              </div>
+            </div>
+            </center>
+            </body>
+    </body>
+</html>

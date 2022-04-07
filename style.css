@@ -1,0 +1,27 @@
+h1{
+    font-size: 50px; font-family: cursive; color: mintcream;
+}
+.terminal {
+    width:700px;height:500px;border: 2px solid grey;border-radius:5px;background-color:black;
+}
+.ribbon {
+width:700px;height:30px;border: 1px solid grey;border-radius:3px;background-color:grey;
+padding-top:5px;padding-bottom:5px;
+}
+.circle {
+float:left;width:20px ; height: 20px;
+}
+.terminal-title {
+color:white;padding-left:65px;
+}
+.terminal-content { 
+width:700px;color:white;padding-left:3px;padding-top:0px;float:left;margin-top:-110px;
+}
+.design {
+background-color: indianred;
+ba
+}
+
+#pu{
+    color: rgb(255, 255, 255); font-size: 15px; width: 700px; height: 407px; overflow-y: scroll; overflow-x: hidden;
+}
